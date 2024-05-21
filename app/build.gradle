@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdk 31
     defaultConfig {
         applicationId "com.ganeshkedariapp"
         minSdkVersion 23
@@ -17,6 +16,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '31.0.0'
+    namespace 'com.ganeshkedariapp'
 }
 
 dependencies {
